@@ -1,1 +1,2 @@
 Oispakaljaa.exe
+kohtaon.exe
