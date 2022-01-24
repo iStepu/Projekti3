@@ -1,3 +1,23 @@
-body{
-    background-color: #ff00b3;
-}
+.container {  display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr;
+    grid-template-rows: 0.4fr 0.2fr 2.7fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "side-left content side-right"
+      "footer footer footer";
+  }
+   
+  .header { grid-area: header; }
+   
+  .nav { grid-area: nav; }
+   
+  .side-left { grid-area: side-left; }
+   
+  .content { grid-area: content; }
+   
+  .side-right { grid-area: side-right; }
+   
+  .footer { grid-area: footer; }
