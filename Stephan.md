@@ -1,2 +1,0 @@
-okhe
--gud jul
