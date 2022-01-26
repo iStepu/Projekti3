@@ -10,14 +10,18 @@
       "footer footer footer";
   }
    
-  .header { grid-area: header; }
+  .header { 
+  grid-area: header; 
+  
+
+}
    
-  .nav { grid-area: nav; }
+  .nav { grid-area: nav; border: 1px solid red; }
    
-  .side-left { grid-area: side-left; }
+  .side-left { grid-area: side-left; border: 1px solid red; }
    
-  .content { grid-area: content; }
+  .content { grid-area: content; border: 1px solid red; }
    
-  .side-right { grid-area: side-right; }
+  .side-right { grid-area: side-right; border: 1px solid red; }
    
-  .footer { grid-area: footer; }
+  .footer { grid-area: footer; border: 1px solid red; }
