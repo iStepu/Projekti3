@@ -1,2 +1,0 @@
-Topias Kälviäinen
-- perunoita joululahjatoiveisiin
