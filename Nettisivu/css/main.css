@@ -1,4 +1,6 @@
-.container {  display: grid;
+.container { 
+    display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 1.1fr 0.9fr;
     grid-template-rows: 0.4fr 0.2fr 2.7fr 0.3fr;
     gap: 0px 0px;
@@ -8,20 +10,32 @@
       "nav nav nav"
       "side-left content side-right"
       "footer footer footer";
-  }
-   
-  .header { 
-  grid-area: header; 
-  
-
 }
    
-  .nav { grid-area: nav; border: 1px solid #2596be; }
+.header { grid-area: header; }
    
-  .side-left { grid-area: side-left; border: 1px solid #2596be; }
+.nav { grid-area: nav; border: 1px solid #2596be; }
    
-  .content { grid-area: content; border: 1px solid #2596be; }
+.side-left { grid-area: side-left; border: 1px solid #2596be; }
    
-  .side-right { grid-area: side-right; border: 1px solid #2596be; }
+.content { grid-area: content; border: 1px solid #2596be; }
    
-  .footer { grid-area: footer; border: 1px solid #2596be; }
+.side-right { grid-area: side-right; border: 1px solid #2596be; }
+   
+.footer { grid-area: footer; border: 1px solid #2596be; }
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr 1fr 1fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "nav"
+      "side-left"
+      "content"
+      "side-right"
+      "footer";
+  }
+}
