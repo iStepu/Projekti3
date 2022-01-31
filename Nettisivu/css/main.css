@@ -16,12 +16,12 @@
 
 }
    
-  .nav { grid-area: nav; border: 1px solid red; }
+  .nav { grid-area: nav; border: 1px solid #2596be; }
    
-  .side-left { grid-area: side-left; border: 1px solid red; }
+  .side-left { grid-area: side-left; border: 1px solid #2596be; }
    
-  .content { grid-area: content; border: 1px solid red; }
+  .content { grid-area: content; border: 1px solid #2596be; }
    
-  .side-right { grid-area: side-right; border: 1px solid red; }
+  .side-right { grid-area: side-right; border: 1px solid #2596be; }
    
-  .footer { grid-area: footer; border: 1px solid red; }
+  .footer { grid-area: footer; border: 1px solid #2596be; }
