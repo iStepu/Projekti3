@@ -27,8 +27,50 @@
           </div>
         </div>
     </div>
+<!-- Siirretty style-elementti esittelysivu.css:stä, koska muutoin tuo Norjan kuvan.
+Täten tekstit menee sekaisin kuvassa, koska css ei osaa etsiä enää oikeaa elementtiä. -->
 
+<!-- Täten KOPIOI koko esittelysivu ja lyö form pohjalle! -->
+
+    <div style="
+        grid-area: img-1; 
+        height: 500px;
+        width: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(../Nettisivu/images/turku-1920.jpg) ;">
+        <a href="#"><h3 class="matkakohde">Yhteystiedot</h3>
+        
+        <p>Hintaluokka: 200-500€</p></a>
+        </div>
+      <div class="txt-1">
+         <p>Tervetuloa Hammerfestiin &#8211; Norjan lähes pohjoisimmalle alueelle! Täältä näet kauniisti avautuvan Jäämeren kylmät tyrskyt ja vihertävän kasvuston peittämää kalliomaisemaa. Keskeltä tätä salmea löydät myös pienen kalastajakaupungin, jonka tunnelmasta jokainen löytää uutta!</p>     
+     </div>
+    </div>
+
+    <h3>Jätä meille palautetta tai mieltäsi askarruttavia asioita matkojamme koskien:</h1>
+
+    <form action="http://www.auramatkat.com/palaute.php" method="post">
+
+        <fieldset>
+          <legend>Tietosi</legend>
+          <ul>
+            <li><label for="form-name">Nimi:</label> <input type="text" name="rname" id="form-name"></li>
+            <li><label for="form-email">Sähköposti: <input type="email" name="email" id="form-email"></label></li>
+            <li>Avoin palaute:<br>
+            <textarea name="feedback" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+          </ul>
+        </fieldset>
+        
     
+        
+        </fieldset> <!-- closes 'Pizza Specs' fieldset -->
+        
+        <p><input type="submit" value="Lähetä palaute">
+        <input type="reset"></p>
+        
+        </form>
     
 </body>
 </html>
