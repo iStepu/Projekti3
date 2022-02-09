@@ -1,61 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="css/esittely.css">
-    <script src="menu.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yhteystiedot &#8211; Auramatkat &#8211; Auraa tiesi lomalle!</title>
+    <!-- Kopioitu alempi meta index.html. Täten teksti alkoi skaalautumaan mobiilinäkymässä kuvan mukana. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/esittely.css">
+<script src="menu.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  /* Tähän voisi koittaa yliajaa gridin mallinnuksen css:n ylitse. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+<title>Yhteystiedot &#8211; Auramatkat &#8211; Auraa tiesi lomalle!</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="top"><img src="images/aura-logo.png" />
-          <div class="name"><h1>Auramatkat</h1><h3>Auraa tiesi lomalle</h3></div>
-          <div class="menu">
-              <div class="topnav" id="myTopnav">
-                <a href="index.html" class="active">Etusivu</a>
-                <a href="#">Matkakohteemme</a>
-                <a href="#">Yhteystiedot</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-              </div>
-          </div>
-        </div>
-    </div>
-<!-- Siirretty style-elementti esittelysivu.css:stä, koska muutoin tuo Norjan kuvan.
-Täten tekstit menee sekaisin kuvassa, koska css ei osaa etsiä enää oikeaa elementtiä. -->
 
-<!-- Täten KOPIOI koko esittelysivu ja lyö form pohjalle! -->
+<div class="container">
+  <div class="top"><img src="images/aura-logo.png" />
+	<div class="name"><h1>Auramatkat</h1><h3>Auraa tiesi lomalle</h3></div>
+    <div class="menu">
+		<div class="topnav" id="myTopnav">
+		<a href="index.html" class="active">Etusivu</a>
+		<a href="esittelysivu.html">Matkakohteemme</a>
+		<a href="#">Yhteystiedot</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+</div>
+	</div>
+  </div>
 
-    <div style="
-        grid-area: img-1; 
-        height: 500px;
-        width: auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-image: url(../Nettisivu/images/turku-1920.jpg) ;">
-        <a href="#"><h3 class="matkakohde">Yhteystiedot</h3>
-        
-        <p>Hintaluokka: 200-500€</p></a>
-        </div>
-      <div class="txt-1">
-         <p>Tervetuloa Hammerfestiin &#8211; Norjan lähes pohjoisimmalle alueelle! Täältä näet kauniisti avautuvan Jäämeren kylmät tyrskyt ja vihertävän kasvuston peittämää kalliomaisemaa. Keskeltä tätä salmea löydät myös pienen kalastajakaupungin, jonka tunnelmasta jokainen löytää uutta!</p>     
-     </div>
-    </div>
+  <!-- Otettu esittelysivu.css:stä "img-1" tyyli, johon vaihdettu kuva. Ei toiminut pelkällä kuvan tyylin vaihtamisella.-->
+  <div class="img-1" style = "grid-area: img-1; 
+  height: 500px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('images/turku-1920.jpg');">
+	<div class="img-sisalto">
+	<a href="#"><h3 class="matkakohde">Yhteystiedot</h3>	
+	<p>Osoite: Vanha Tampereentie 112, 20500 Turku <br>
+        Puh. +358 40 123 4567 <br>
+        Sähköposti: info@auramatkat.fi <br>
+        Asiakaspalvelu on auki ark. 10:00 &#8211; 18:00 <br>
+        Lauantaisin 11:00 &#8211; 16:00
+    </p></a>
 
-    <h3>Jätä meille palautetta tai mieltäsi askarruttavia asioita matkojamme koskien:</h1>
+	</div>
+ 
+
+</div>
+
+<!-- Laitettu tyyliin txt-1, koska muutoin tulee kuvan kokoinen hyppy formiin. -->
+<div class="txt-1" style="text-align: left;">
+<h3>Jätä meille palautetta tai mieltäsi askarruttavia asioita matkojamme koskien:</h3>
 
     <form action="http://www.auramatkat.com/palaute.php" method="post">
 
         <fieldset>
           <legend>Tietosi</legend>
-          <ul>
+          <ul style="list-style-type: none;">
             <li><label for="form-name">Nimi:</label> <input type="text" name="rname" id="form-name"></li>
             <li><label for="form-email">Sähköposti: <input type="email" name="email" id="form-email"></label></li>
             <li>Avoin palaute:<br>
@@ -63,14 +67,12 @@ Täten tekstit menee sekaisin kuvassa, koska css ei osaa etsiä enää oikeaa el
           </ul>
         </fieldset>
         
-    
-        
-        </fieldset> <!-- closes 'Pizza Specs' fieldset -->
-        
         <p><input type="submit" value="Lähetä palaute">
-        <input type="reset"></p>
-        
+        <input type="reset"></p>        
         </form>
-    
+</div>
+
+<!-- Formin jälkeen jää iso tyhjä tila img-2- ja txt-2-gridien takia. -->
+
 </body>
 </html>
