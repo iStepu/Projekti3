@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  font-family: montserrat;
 }
 
 .container { 
@@ -17,17 +18,55 @@
       "footer footer footer";
 }
    
-.header { grid-area: header; }
+.header { grid-area: header; background-color: #1E212B;}
+.name{
+  position:absolute;
+  top: 5%;
+  left: 50%;
+  color: #fff;
+}
    
-.nav { grid-area: nav; border: 1px solid #2596be; }
+.nav { grid-area: nav; background-color: #373C4A; }
+.nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.nav li{
+  display: inline;
+  float: left;
+}
+
+.nav li a{
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover{
+  background-color: #4a5061;
+}
+
+
    
-.side-left { grid-area: side-left; border: 1px solid #2596be; background-image: url('../images/kansikuva-etusivulle-hammerfest.jpg'); background-size: auto; }
+.side-left {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('../images/kansikuva-etusivulle-hammerfest.jpg');
+
+  grid-area: side-left; 
+  /* background-image: url('../images/kansikuva-etusivulle-hammerfest.jpg');  */
+  object-fit: scale-down; 
+}
    
-.content { grid-area: content; border: 1px solid #2596be; }
+.content { grid-area: content;}
    
-.side-right { grid-area: side-right; border: 1px solid #2596be; }
+.side-right { grid-area: side-right;}
    
-.footer { grid-area: footer; border: 1px solid #2596be; }
+.footer { grid-area: footer; }
 
 .topbar{
   position: absolute;
@@ -46,6 +85,10 @@ img.language-switch{
   width: 40px;
   height: auto;
   border: 1px solid #ddd;
+}
+
+.footer p{
+  text-align: center;
 }
 /* Responsiivinen osuus alkaa */
 
