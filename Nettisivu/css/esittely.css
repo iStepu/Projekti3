@@ -1,3 +1,23 @@
+/*Kielenvaihtonapit*/
+.topbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  }
+      
+.language{
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+      
+img.language-switch{
+  width: 40px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+/*Kielenvaihtonapit loppuu*/
 
 * {
     margin: 0;
@@ -212,6 +232,4 @@
         display: block;
         text-align: left;
       }
-    
-    
-    
+
