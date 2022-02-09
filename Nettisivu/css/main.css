@@ -55,7 +55,7 @@
 
    
 .side-left {
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('../images/kansikuva-etusivulle-hammerfest.jpg');
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('../images/kansikuva-etusivulle-hammerfest.jpg'); background-repeat: no-repeat;
 
   grid-area: side-left; 
   /* background-image: url('../images/kansikuva-etusivulle-hammerfest.jpg');  */
