@@ -9,19 +9,19 @@
   /* Tähän voisi koittaa yliajaa gridin mallinnuksen css:n ylitse. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 </style>
-<title>Yhteystiedot &#8211; Auramatkat &#8211; Auraa tiesi lomalle!</title>
+<title>Contact &#8211; Auramatkat &#8211; Plow your way abroad!</title>
 </head>
 
 <body>
 
 <div class="container">
   <div class="top"><img src="images/aura-logo.png" />
-	<div class="name"><h1>Auramatkat</h1><h3>Auraa tiesi lomalle</h3></div>
+	<div class="name"><h1>Auramatkat</h1><h3>Plow your way abroad</h3></div>
     <div class="menu">
 		<div class="topnav" id="myTopnav">
-		<a href="index.html" class="active">Etusivu</a>
-		<a href="esittelysivu.html">Matkakohteemme</a>
-		<a href="#">Yhteystiedot</a>
+		<a href="index.html" class="active">Front Page</a>
+		<a href="esittelysivu.html">Destinations</a>
+		<a href="#">Contact</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars"></i>
 		</a>
@@ -38,12 +38,12 @@
   background-position: center center;
   background-image: url('images/turku-1920.jpg');">
 	<div class="img-sisalto">
-	<a href="#"><h3 class="matkakohde">Yhteystiedot</h3>	
-	<p>Osoite: Vanha Tampereentie 112, 20500 Turku <br>
-        Puh. +358 40 123 4567 <br>
-        Sähköposti: info@auramatkat.fi <br>
-        Asiakaspalvelu on auki ark. 10:00 &#8211; 18:00 <br>
-        Lauantaisin 11:00 &#8211; 16:00
+	<a href="#"><h3 class="matkakohde">Contact</h3>	
+	<p>Address: Vanha Tampereentie 112, 20500 Turku <br>
+        Phone. +358 40 123 4567 <br>
+        Email: info@auramatkat.fi <br>
+        Customer service is open weekdays. 10:00 &#8211; 18:00 <br>
+        On saturday 11:00 &#8211; 16:00
     </p></a>
 
 	</div>
@@ -53,21 +53,21 @@
 
 <!-- Laitettu tyyliin txt-1, koska muutoin tulee kuvan kokoinen hyppy formiin. -->
 <div class="txt-1" style="text-align: left;">
-<h3>Jätä meille palautetta tai mieltäsi askarruttavia asioita matkojamme koskien:</h3>
+<h3>Leave us some feedback or tell us something about travelling:</h3>
 
     <form action="http://www.auramatkat.com/palaute.php" method="post">
 
         <fieldset>
-          <legend>Tietosi</legend>
+          <legend>Your information</legend>
           <ul style="list-style-type: none;">
-            <li><label for="form-name">Nimi:</label> <input type="text" name="rname" id="form-name"></li>
-            <li><label for="form-email">Sähköposti: <input type="email" name="email" id="form-email"></label></li>
-            <li>Avoin palaute:<br>
+            <li><label for="form-name">Name:</label> <input type="text" name="rname" id="form-name"></li>
+            <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+            <li>Open feedback:<br>
             <textarea name="feedback" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
           </ul>
         </fieldset>
         
-        <p><input type="submit" value="Lähetä palaute">
+        <p><input type="submit" value="Send feedback">
         <input type="reset"></p>        
         </form>
 </div>
