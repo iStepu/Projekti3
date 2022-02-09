@@ -21,10 +21,8 @@
    
 .header { grid-area: header; background-color: #1E212B;}
 .name{
-  position:absolute;
-  top: 5%;
-  left: 5%;
-  
+  text-align: center;
+  margin-top: 5px;
   color: #fff;
 }
    
