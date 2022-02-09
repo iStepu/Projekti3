@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: montserrat;
+  font-size: 2.5vh;
 }
 
 .container { 
@@ -46,6 +47,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 2vh;
 }
 
 .nav li a:hover{
