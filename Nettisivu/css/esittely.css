@@ -42,14 +42,14 @@ img.language-switch{
         "txt-2 txt-2 txt-2"; 
     }
     .top {
-      display: grid; 
+      /* display: grid; 
       grid-template-columns: 1fr 1fr 1fr; 
       grid-template-rows: 1fr 1fr 1fr; 
       gap: 0px 0px; 
       grid-template-areas: 
         ". . menu"
         ". . ."
-        ". . ."; 
+        ". . .";  */
       grid-area: top; 
     height: 200px;
     background-color: #1E212B;
@@ -98,6 +98,7 @@ img.language-switch{
         background-repeat: no-repeat;
         background-position: center center;
         background-image: url('../images/hammerfest.jpg');
+        z-index: -1;
     }
     
     .img-sisalto {
@@ -183,6 +184,8 @@ img.language-switch{
     .topnav {
       background-color: #373C4A;
       overflow: hidden;
+      z-index: 1;
+      width: 100%;
     }
     
     .topnav a {
