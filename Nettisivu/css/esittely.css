@@ -94,6 +94,7 @@ img.language-switch{
         background-repeat: no-repeat;
         background-position: center center;
         background-image: url('../images/hammerfest.jpg');
+        z-index: -1;
     }
     
     .img-sisalto {
@@ -180,6 +181,8 @@ img.language-switch{
     .topnav {
       background-color: #373C4A;
       overflow: hidden;
+      z-index: 1;
+      width: 100%;
     }
     
     .topnav a {
