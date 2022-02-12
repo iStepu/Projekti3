@@ -218,7 +218,23 @@ img.language-switch{
     .topnav .icon {
       display: none;
     }
+
+    /* formit */
+    form {
+      max-width:500px;
+      margin:5px;
+    }
+    input {
+      margin: 0.5em;
+    }
     
+    fieldset {
+      margin: 1em 0.5em 1em 0.2em;
+    }
+    
+    textarea {
+      margin: 0.2em;
+    }
     
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     @media screen and (max-width: 600px) {
@@ -233,6 +249,12 @@ img.language-switch{
         padding-right: 20px;
         font-size: 5vh;
       }
+      .name {
+        font-size: 4vw;
+    }
+    textarea {
+      width: 30vmax;
+    }
     }
     
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -249,6 +271,8 @@ img.language-switch{
         display: block;
         text-align: left;
       }
+
+    
 
     }
 
