@@ -34,12 +34,11 @@
       .container {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 0.4fr 1.6fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.4fr 1.6fr 1fr 0.8fr; 
         gap: 0px 0px; 
         grid-template-areas: 
           "top top top"
           "img-1 img-1 img-1"
-          "txt-1 txt-1 txt-1"
           "img-2 img-2 img-2"
           "txt-2 txt-2 txt-2"; 
       }
