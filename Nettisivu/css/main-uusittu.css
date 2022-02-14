@@ -131,6 +131,12 @@
       p{
           flex-direction: column;
       }
+
+      p.frontpage-dark{
+
+        color: #444;
+
+      }
       
       
       
